@@ -4,10 +4,10 @@ def find_min_in_nested_arrays(src)
 
   lowest_temps = []
   outer_count = 0
-  while outer_count < src[outer_count].length do
+  while outer_count < src.length do
     low_temp = -1
     inner_count = 0
-    while inner_count < src[outer_count][inner_count].length do
+    while inner_count < src[outer_count].length do
       if low_temp == -1
         low_temp == src[outer_count][inner_count]
       elsif low_temp < src[outer_count][inner_count]
